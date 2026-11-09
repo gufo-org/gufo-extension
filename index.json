@@ -30,6 +30,15 @@
       "releases": [
         {
           "api_version": ">= 0.2.7",
+          "digest": "sha256:129994a14f8e0c02ba6301a729494b9779cf0b075b39c881323f89d31decdd0c",
+          "platforms": [
+            "linux"
+          ],
+          "revision": "b8c6d165f0888d5d516563dc382ae0ab24c5eeaa",
+          "version": "0.2.0"
+        },
+        {
+          "api_version": ">= 0.2.7",
           "digest": "sha256:6b35a930b4f2f73236be6af94149e4332131162e11e03bfbe88ec0687c1540b0",
           "platforms": [
             "linux"
