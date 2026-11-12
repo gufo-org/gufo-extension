@@ -30,6 +30,27 @@
       ],
       "source": "https://github.com/franzmoca/ds41-gufo-extension"
     },
+    "flash_next_iq": {
+      "description": "Qwen3.8-Flash-Next UD-IQ4_XS (Unsloth Dynamic 3.1 and the 2026-10 export) on Strix Halo with MTP drafting, vision and F16 matrix-core prefill for IQ experts",
+      "homepage": "https://github.com/storm1er/flash-next-iq-gufo-extension",
+      "license": "MIT",
+      "maintainers": [
+        "@storm1er"
+      ],
+      "releases": [
+        {
+          "api_version": ">= 0.3.0",
+          "digest": "sha256:1eac21ac3d8cb142e6ab51bfd9389b8799f24f928dc3564c238ed29e959a9671",
+          "notes": "UD 3.1 UD-IQ4_XS: IQ3_XXS/IQ4_XS/IQ2_S gate/up, Q5_0/IQ4_NL/Q2_0 down (Q2_0 loaded as an unsized tensor), IQ4_XS embeddings, Q6_K trunk on the F16 matrix cores in prefill; also the 2026-10 IQ3_S/IQ4_XS/IQ4_NL export. Built on Gufo 0.34.0.",
+          "platforms": [
+            "linux"
+          ],
+          "revision": "9ce08cef17151aca3751ea2528765902054c54c4",
+          "version": "0.2.0"
+        }
+      ],
+      "source": "https://github.com/storm1er/flash-next-iq-gufo-extension"
+    },
     "flint": {
       "description": "Flint 40B MoE text generation",
       "homepage": "https://github.com/brunobarbosaux-ai/flint-gufo-extension",
