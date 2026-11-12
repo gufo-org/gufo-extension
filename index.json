@@ -110,6 +110,27 @@
         }
       ],
       "source": "https://github.com/slimsami/strycast-qwen35moe-gufo-extension"
+    },
+    "upscale": {
+      "description": "Real-ESRGAN x2/x4 image upscaling (SRVGGNetCompact) on Strix Halo with HIP",
+      "homepage": "https://github.com/D3rPapts/upscale-gufo-extension",
+      "license": "MIT",
+      "maintainers": [
+        "@D3rPapts"
+      ],
+      "releases": [
+        {
+          "api_version": ">= 0.3.0",
+          "digest": "sha256:e29f272308caa77287462c7e36790d09814aa9dd80aa3802d6d971d4512d4e88",
+          "notes": "First release: Real-ESRGAN SRVGGNetCompact (realesr-animevideov3, realesr-general-x4v3, realesr-general-wdn-x4v3) as an image_generation provider for /v1/images/edits, x2 and x4. GPU-validated on Strix Halo (Windows) against Gufo main 0d238d4f; bit-identical to the in-tree upscaler of gufo-studio-windows. Video upscaling is not included yet.",
+          "platforms": [
+            "windows"
+          ],
+          "revision": "42eed34073ad072e7e97a04888d0af80a8014deb",
+          "version": "0.1.0"
+        }
+      ],
+      "source": "https://github.com/D3rPapts/upscale-gufo-extension"
     }
   },
   "schema": 1
