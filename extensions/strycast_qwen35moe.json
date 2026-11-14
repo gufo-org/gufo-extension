@@ -8,6 +8,14 @@
   "source": "https://github.com/slimsami/strycast-qwen35moe-gufo-extension",
   "releases": [
     {
+      "version": "0.1.0",
+      "revision": "14e46a3f7a79f4404dfd4d819cc8b33a92cd62ca",
+      "digest": "sha256:74827093e71d63cd1e170ac1ab6082ae59f792ab6db98161af2722560b93ab2e",
+      "api_version": ">= 0.2.21",
+      "platforms": ["linux"],
+      "notes": "Builds against Gufo 0.33.0. Strycast's 35B-A3B and Ornith runner on the v0.33.0 base: Gufo's own KV-cache option, MTP prime chunk and layered prefill replace Strycast's earlier variants; the probe declines GGUFs whose expert formats the kernels cannot decode."
+    },
+    {
       "version": "0.0.1",
       "revision": "4882b7a6954fe472218d0d120ee3665076fe71fa",
       "digest": "sha256:03a06f35f0ca7939a3c6e433b276c01e0d4d3895a223332a304b84d142daa47e",
