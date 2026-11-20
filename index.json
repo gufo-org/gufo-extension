@@ -40,6 +40,28 @@
       ],
       "source": "https://github.com/franzmoca/ds41-gufo-extension"
     },
+    "diffusion_gemma": {
+      "description": "DiffusionGemma 26B-A4B block-diffusion text model on Strix Halo: batched denoising, continuation cache, tool calls and reasoning",
+      "homepage": "https://github.com/gabrielperales/diffusiongemma-gufo-extension",
+      "license": "MIT",
+      "maintainers": [
+        "@gabrielperales"
+      ],
+      "releases": [
+        {
+          "api_version": ">= 0.3.20",
+          "digest": "sha256:2ece3a4f6bbab5e10e9536173d7afab33636539dcd80b3e2930e23d18f46026a",
+          "notes": "First registry release. Built on Gufo 0.35.0. Run on the GPU on Windows (Radeon 8060S); Linux builds and passes the CPU tests but has not run on a GPU.",
+          "platforms": [
+            "windows",
+            "linux"
+          ],
+          "revision": "8941b24925d6c9a59c9dfe3405b0d11c63d3c05e",
+          "version": "0.1.0"
+        }
+      ],
+      "source": "https://github.com/gabrielperales/diffusiongemma-gufo-extension"
+    },
     "flint": {
       "description": "Flint 40B MoE text generation with optional DFlash2 speculative decoding",
       "homepage": "https://github.com/brunobarbosaux-ai/flint-gufo-extension",

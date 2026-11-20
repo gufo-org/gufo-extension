@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "name": "diffusion_gemma",
+  "description": "DiffusionGemma 26B-A4B block-diffusion text model on Strix Halo: batched denoising, continuation cache, tool calls and reasoning",
+  "homepage": "https://github.com/gabrielperales/diffusiongemma-gufo-extension",
+  "license": "MIT",
+  "maintainers": [
+    "@gabrielperales"
+  ],
+  "source": "https://github.com/gabrielperales/diffusiongemma-gufo-extension",
+  "releases": [
+    {
+      "version": "0.1.0",
+      "revision": "8941b24925d6c9a59c9dfe3405b0d11c63d3c05e",
+      "digest": "sha256:2ece3a4f6bbab5e10e9536173d7afab33636539dcd80b3e2930e23d18f46026a",
+      "api_version": ">= 0.3.20",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "notes": "First registry release. Built on Gufo 0.35.0. Run on the GPU on Windows (Radeon 8060S); Linux builds and passes the CPU tests but has not run on a GPU."
+    }
+  ]
+}
