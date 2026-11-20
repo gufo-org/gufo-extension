@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "name": "loom",
+  "description": "51 open models (Qwen, gemma, gpt-oss, Llama, LFM, Nemotron, ...) on AMD Loom kernels, installed with gufo model install",
+  "homepage": "https://github.com/loom-fun/loom-gufo-extension",
+  "license": "MIT",
+  "maintainers": [
+    "@jeremyfowers"
+  ],
+  "source": "https://github.com/loom-fun/loom-gufo-extension",
+  "releases": [
+    {
+      "version": "0.3.6",
+      "revision": "683a9bf7e4190df1376d27e55c4e0a53f2fa53d1",
+      "digest": "sha256:d08fc722bf3b3ef724ced5acbd5e6d5de9e033963fc565f426e0ce2ebd4ec6d3",
+      "api_version": ">= 0.3.35",
+      "platforms": [
+        "linux"
+      ],
+      "notes": "51 loom-fun packages as Gufo models (gufo model install <id>, then --model <id>); the preset each package publishes for the GPU; packages built for another Loom SDK are refused at load. Loom SDK 0.2.0 (hrx-system v0.2.0) through libloom_text_embed, which the extension's nix/runtime.nix (or flake output #runtime) builds and the install finds on CMAKE_PREFIX_PATH. Built on Gufo ec6d3d07 (after 0.35.0) and 029a156."
+    }
+  ]
+}
