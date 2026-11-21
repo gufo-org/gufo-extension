@@ -40,6 +40,27 @@
       ],
       "source": "https://github.com/franzmoca/ds41-gufo-extension"
     },
+    "flash_next_gyro": {
+      "description": "Qwen3.8 Flash-Next with Agention Gyro trellis (TQ2_T) routed experts on Strix Halo",
+      "homepage": "https://github.com/smpurkis/gyro-gufo-extension",
+      "license": "MIT",
+      "maintainers": [
+        "@smpurkis"
+      ],
+      "releases": [
+        {
+          "api_version": ">= 0.3.35",
+          "digest": "sha256:fd9e9a4deb27d2eb76adb02f3396e569eb65c63a50753de36b13027cfbca5aad",
+          "notes": "Provider flash-next-gyro-m for single-file Gyro-M TQ2_0 GGUFs; coexists with the built-in flash-next-q4 provider. Built on Gufo 029a1569 (extension API 0.3.35); needs gufo-org/gufo#1313 so a writer's split.count = 0 is read as one file. 26/26 ctest, module-install and serving validated.",
+          "platforms": [
+            "linux"
+          ],
+          "revision": "74d1240b7910f0a7794efe7633f0bb75e9d2f53c",
+          "version": "0.1.0"
+        }
+      ],
+      "source": "https://github.com/smpurkis/gyro-gufo-extension"
+    },
     "flint": {
       "description": "Flint 40B MoE text generation with optional DFlash2 speculative decoding",
       "homepage": "https://github.com/brunobarbosaux-ai/flint-gufo-extension",
