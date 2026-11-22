@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "name": "flash_next_gyro",
+  "description": "Qwen3.8 Flash-Next with Agention Gyro trellis (TQ2_T) routed experts on Strix Halo",
+  "homepage": "https://github.com/smpurkis/gyro-gufo-extension",
+  "license": "MIT",
+  "maintainers": [
+    "@smpurkis"
+  ],
+  "source": "https://github.com/smpurkis/gyro-gufo-extension",
+  "releases": [
+    {
+      "version": "0.1.0",
+      "revision": "4a4ea5d4b4b67f58f55b29a15dd4aa93900a371f",
+      "digest": "sha256:227872c7e2bd79a9af91bec1e0ad88f067aaf0180a7734716836f6f3ab6745d5",
+      "api_version": ">= 0.3.35",
+      "platforms": [
+        "linux"
+      ],
+      "notes": "Provider flash-next-gyro-m for single-file Gyro-M TQ2_0 GGUFs; coexists with the built-in flash-next-q4 provider. Built on Gufo 029a1569 (extension API 0.3.35); needs gufo-org/gufo#1313 so a writer's split.count = 0 is read as one file. 26/26 ctest, 1510 tok/s prompt processing on an 11,789-token prompt, module-install and serving validated."
+    }
+  ]
+}
