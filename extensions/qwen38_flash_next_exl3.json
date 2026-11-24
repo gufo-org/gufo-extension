@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "name": "qwen38_flash_next_exl3",
+  "description": "Qwen3.8 Flash-Next EXL3 4.05, 3.05 and 2.05 bpw checkpoints on Strix Halo with MTP speculative decoding",
+  "homepage": "https://github.com/gufo-org/qwen38-flash-next-exl3-gufo-extension",
+  "license": "MIT AND Apache-2.0",
+  "maintainers": [
+    "@fedeizzo"
+  ],
+  "source": "https://github.com/gufo-org/qwen38-flash-next-exl3-gufo-extension",
+  "releases": [
+    {
+      "version": "0.1.1",
+      "revision": "4fe739b8b4c54429de13867735ab0711c3869d7d",
+      "digest": "sha256:8797bf004fcfb3e8236b583159b9dd1780e592c59ecbb411f9c9f508b71dea94",
+      "api_version": ">= 0.3.46",
+      "platforms": [
+        "linux"
+      ],
+      "notes": "First release: EXL3 providers flash-next-exl3-4bpw, -3bpw and -2bpw (HIP, gfx1151) with checkpoint MTP drafting, built on Gufo's in-tree qwen38_flash_next runtime. Needs Gufo 831c55d3 or later (loadable modules with depends, gufo-org/gufo#1376); Linux only."
+    }
+  ]
+}
