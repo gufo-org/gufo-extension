@@ -10,6 +10,16 @@
   "source": "https://github.com/brunobarbosaux-ai/flint-gufo-extension",
   "releases": [
     {
+      "version": "0.5.0",
+      "revision": "dcccec1bec9941973c6e6e0e66273b8db1953c89",
+      "digest": "sha256:8508f149c1f80429cdf584c84737a38892bc6589ee1b4bd92f900ecf704ebac6",
+      "api_version": ">= 0.3.0",
+      "platforms": [
+        "linux"
+      ],
+      "notes": "Sliding-window layers become a ring in the continuation cache (payload_layout flint-kv-rows-window-v1; state_abi unchanged): a 130k frontier retains 3,995,190,656 B instead of 12,946,504,512 B, so an identical repeat restores all 128,981 tokens from RAM in 51 ms and, after a disk restart, 128,980 from disk in 1.4 s; the 8 GiB retained-snapshot cap is unchanged and no longer binds, and 60k disk restart reuse is no longer refused. Cache identity changes, so 0.4.0 disk caches are a miss by design and re-prefill. Weights load through a pinned staging buffer on four threads: under page-cache pressure a 131072 load drops from 133 s to 64 s, for 0.3-0.5 s on a healthy node (8.0-8.5 -> 8.5-9.0 s). At 262144 the per-session request state falls from 26.0 GiB to about 8.7 GiB, so four sessions load in 9.5 s using 60.0 GiB and eight fit on a 128 GB box. Matrix-core decode attention is compiled but OFF by default; the default build keeps the 0.4.0 decode kernel and flipping it is gated on documented prerequisites. drafter_parity now starts each prompt from Reset() and an odd prefill_tile is rejected at load. Greedy output is byte-identical to 0.4.0 on short prompts. Built and validated on Gufo v0.36.0 (API 0.3.42); source builds on any 0.3.x host."
+    },
+    {
       "version": "0.4.0",
       "revision": "cf9f7aa02991049647abe9487979681e8fd99e2b",
       "digest": "sha256:3b8e9e867fe187bb7e6fa2a18c3d7a483c8c45d16afc4e9667e685653ff07557",
