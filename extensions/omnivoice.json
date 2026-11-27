@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "name": "omnivoice",
+  "description": "k2-fsa OmniVoice on Strix Halo: multilingual zero-shot speech synthesis with voice design and voice cloning",
+  "homepage": "https://github.com/gufo-extensions/omnivoice",
+  "license": "MIT AND Apache-2.0 AND BSD-2-Clause",
+  "maintainers": [
+    "@mduka"
+  ],
+  "source": "https://github.com/gufo-extensions/omnivoice",
+  "releases": [
+    {
+      "version": "0.2.3",
+      "revision": "7ee40b43f1610e31be51f03d853836fe401c70af",
+      "digest": "sha256:ad3de2b242a9e6442005525f1bf8666536e97a1e72bcb9f6f49e245a696de863",
+      "api_version": ">= 0.3.0",
+      "platforms": [
+        "linux"
+      ],
+      "notes": "Code and synthesis unchanged from 0.2.1. Built on Gufo 0.37.0."
+    },
+    {
+      "version": "0.2.1",
+      "revision": "3398d87a8c7a4326e4edc777462d06fd40a9fad4",
+      "digest": "sha256:70f608de6d4196a38bab171af3a850547c538480ac71856bbc7b5ca875cfa1a2",
+      "api_version": ">= 0.3.0",
+      "platforms": [
+        "linux"
+      ],
+      "notes": "`gufo model install omnivoice` installs the tested weights (Gufo 0.35.0 or later); synthesis unchanged from 0.2.0. Built on Gufo 0.35.0."
+    },
+    {
+      "version": "0.2.0",
+      "revision": "2edaf71555ee103da8c8d435b5f77f5306904495",
+      "digest": "sha256:eaed28e8c234b9a2378929368e2b006f813fec512fe11bc75ec485a1294c50b8",
+      "api_version": ">= 0.3.0",
+      "platforms": [
+        "linux"
+      ],
+      "notes": "Speech synthesis from the Hugging Face directory: automatic voice, voice design and voice cloning. Built on Gufo 0.34.0."
+    }
+  ]
+}
