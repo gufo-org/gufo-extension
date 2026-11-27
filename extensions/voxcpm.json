@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "name": "voxcpm",
+  "description": "OpenBMB VoxCPM2 on Strix Halo: multilingual 48 kHz speech synthesis with voice design and voice cloning",
+  "homepage": "https://github.com/gufo-extensions/voxcpm",
+  "license": "MIT AND Apache-2.0",
+  "maintainers": [
+    "@mduka"
+  ],
+  "source": "https://github.com/gufo-extensions/voxcpm",
+  "releases": [
+    {
+      "version": "0.2.2",
+      "revision": "6a0ae5fb16f5581822db3e0faefab5f7eafa0727",
+      "digest": "sha256:55727fea4f9ec3c333218a7888018b580f8958b2a58c07f53c77654c5289a76d",
+      "api_version": ">= 0.3.24",
+      "platforms": [
+        "linux"
+      ],
+      "notes": "Declares two GPU hardware queues (extension API 0.3.24), so `gufo serve tts` decodes audio beside generation without `GPU_MAX_HW_QUEUES`: 4 to 5 % faster with the Q8_0 file, 3 to 4 % with bfloat16 weights; cloning without a transcript (a preset without one, or `voice_clone_mode: speaker_embedding_only`) works instead of failing with 500. Built on Gufo 0.37.0."
+    },
+    {
+      "version": "0.1.1",
+      "revision": "46bee8f0773fa03a2ad4de0d3aa8a99e1eddaf9a",
+      "digest": "sha256:a6063558ba53b01840a1f5121187477fabf373892dc19930d1b2a14d1b26dcca",
+      "api_version": ">= 0.3.0",
+      "platforms": [
+        "linux"
+      ],
+      "notes": "`gufo model install voxcpm2` or `voxcpm2-q8` installs the tested Hugging Face weights or audio.cpp's Q8_0 GGUF (Gufo 0.35.0 or later); synthesis unchanged from 0.1.0. Built on Gufo 0.35.0."
+    },
+    {
+      "version": "0.1.0",
+      "revision": "f1f00b518dd6b33e39a861bc3e84083acaf4c1e1",
+      "digest": "sha256:1b8900164cc69c636389f664b3152fd2de1327ba26c475403a252da1a5b40ae2",
+      "api_version": ">= 0.3.0",
+      "platforms": [
+        "linux"
+      ],
+      "notes": "Speech synthesis from the Hugging Face directory or audio.cpp's GGUFs (Q8_0 products on the matrix cores): automatic voice, voice design and voice cloning. Built on Gufo 0.34.0."
+    }
+  ]
+}
